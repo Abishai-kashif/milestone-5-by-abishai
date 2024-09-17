@@ -286,9 +286,27 @@ button.shearable-buttons {
 /* Code For Resposiveness */
 
 @media (max-width: 650px) {
-    form fieldset div select {
-        background: var(--dark-blue);
-        color: var(--white);
+    form fieldset div {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    form fieldset div input,
+    form fieldset div div#phone-container {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    form fieldset div div#phone-container {
+        /* margin: 0; */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    form fieldset div div#phone-container select {
+        width: 20%;
+        margin-top: 5px;
+        margin-left: 10px;
     }
 
     div.generated-resume {
