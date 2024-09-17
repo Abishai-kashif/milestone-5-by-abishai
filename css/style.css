@@ -291,6 +291,10 @@ button.shearable-buttons {
         overflow: hidden;
     }
 
+     form fieldset div input {
+        text-align: center;
+    }
+
      form fieldset div.area-container {
         overflow: initial;
     }
