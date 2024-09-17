@@ -291,6 +291,10 @@ button.shearable-buttons {
         overflow: hidden;
     }
 
+     form fieldset div.area-container {
+        overflow: initial;
+    }
+
     form fieldset div input,
     form fieldset div div#phone-container {
         width: 100%;
