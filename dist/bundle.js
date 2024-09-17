@@ -54,6 +54,7 @@ function generateResume(name, email, countryCode, phone, educations, skills, wor
         <h2>Education</h2>
         <ul>
             ${educations
+        .filter((education) => education.value !== "")
         .map((education) => `<li data-editable="education" contenteditable="true">${education.value}</li>`)
         .join("")}
         </ul>
@@ -72,6 +73,7 @@ function generateResume(name, email, countryCode, phone, educations, skills, wor
         <h2>Work Experience</h2>
         <ul>
             ${workExperiences
+        .filter((workExperience) => workExperience.value !== "")
         .map((workExperience) => `<li data-editable="work-experience" contenteditable="true">${workExperience.value}</li>`)
         .join("")}
         </ul>
